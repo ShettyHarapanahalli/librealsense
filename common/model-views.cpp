@@ -2770,7 +2770,7 @@ namespace rs2
                 auto meters = texture->get_last_frame().as<depth_frame>().get_distance(x, y);
 
                 if (viewer.metric_system)
-                    ss << std::dec << ", " << std::setprecision(2) << meters << " meters";
+                    ss << std::dec << ", " << std::setprecision(3) << meters << " meters";
                 else
                     ss << std::dec << ", " << std::setprecision(2) << meters / FEET_TO_METER << " feet";
             }
