@@ -76,5 +76,8 @@ try:
         if key & 0xFF == ord('q') or key == 27:
             cv2.destroyAllWindows()
             break
+
+except Exception as e:
+        print(e)            
 finally:
     pipeline.stop()
