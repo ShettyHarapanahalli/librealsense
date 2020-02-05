@@ -67,12 +67,10 @@ def main(argv):
 
             print("Done\n")
         except Exception as e:
-            pipeline.stop()
             print(e)
-        except:
+        finally:
             pipeline.stop()
-            print("A different Error")
-
+           
 
 
 
